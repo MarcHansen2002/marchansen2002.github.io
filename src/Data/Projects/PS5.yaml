@@ -1,0 +1,30 @@
+project:
+    title: "Playstation 5 Game Engine / Game"
+    subtitle: "Group project for University where we were tasked with creating a game engine / game that artists and designers could use to put together a game"
+    overview: >
+        This project is currently ongoing so there won't be as much to write about this project.
+        This project is a game engine / game worked on by a group of students, myself included, for a university assignment. On the project there is myself,
+        one other programmer, 2 artists, 3 designers, and 1 digital media student. On the programming side we have to put together a functional game for the
+        playstation 5. I cannot go into the code side of things much due to the sony NDA but I can talk about the project itself.
+    features:
+        - "Scene Management"
+        - "Scene Editor"
+        - "Data oriented asset loading"
+        - "Shader Programming"
+        - "Data serialisation to json"
+    tech:
+        - "Playstation API"
+        - "C++"
+        - "ImGui"
+        - "Jolt Physics"
+    challenges: >
+        With there being a heavy NDA on the code, there is no resources online to assist with anything specific to the playstation. This requires using
+        the documentation, which at times can be lackluster in descriptions and examples. This has lead to a lot of trial and error using Sony specific
+        code and needing to ask other students and assist them with specific things if one or the other has gotten a certain feature working.
+    learned: >
+        I have learned to rely less on online sources to understand how things work, which has helped me deepen my understanding on the topics related
+        to where I had struggled with previously. Mainly PS5 specific code, but this is a skill I can take into other areas, whilst I won't fully stop
+        reading stack overflow articles, I will be able to rely on them less in the future. I believe this to be helpful as not every responder on that forum
+        will actually have the most efficient method of something, I do trust people online to know what they're doing but due to anyone being able to post
+        it's less certain that the more knowledgable people will get an answer to every question out there epsecially with how many questions get asked
+        daily.

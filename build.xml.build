@@ -1,0 +1,38 @@
+<project name="PortfolioBuilder" default="convert" basedir="">
+
+  <!-- ==== Properties ==== -->
+  <property name="build.dir" value="docs"/>
+
+  <!-- ==== Target: clean ==== -->
+  <target name="clean">
+    <echo message="Cleaning generated files..."/>
+    <delete dir="${build.dir}" />
+  </target>
+
+  <!-- ==== Target: convert ==== -->
+  <target name="convert">
+    <echo message="Running YAML to HTML conversion..."/>
+	
+	<copy todir="${build.dir}/Scripts">
+		<fileset basedir="src/Scripts" />
+	</copy>
+	<copy todir="${build.dir}/CSS">
+		<fileset basedir="src/CSS" />
+	</copy>
+	<copy file = "src/Data/index.html" tofile="${build.dir}/index.html"/>
+	<copy file = "src/Data/MarcHansen_CV.pdf" tofile="${build.dir}/MarcHansen_CV.pdf"/>
+	<copy todir="${build.dir}/Images">
+		<fileset basedir="src/Images" />
+	</copy>
+
+    <exec program="python">
+      <arg value="ProjectBuilder.py"/>
+    </exec>
+  </target>
+
+  <!-- ==== Target: build ==== -->
+  <target name="build" depends="clean, convert">
+    <echo message="Build complete!"/>
+  </target>
+
+</project>
