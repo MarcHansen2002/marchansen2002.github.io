@@ -1,0 +1,69 @@
+index:
+    about:
+        main: >
+            I've been gaming and interested in games for as long as I can remember. Throughout primary and secondary
+            school I knew I wanted to do something with computers. When I found out that I could make my own games
+            using programmes like scratch I knew that I wanted to do something like that and decided to go down the path
+            of learning more advanced things going to construct and then unreal in college, later making my own engines in
+            University.
+        sub: >
+            My interests include gaming, programming and making the fundamental systems that make up a game.
+    projects:
+        pinned:
+            title: "Pinned"
+            projects:
+                - "PrisonMiner"
+                - "PS5"
+                - "MiniGolf"
+        catagories:
+            Engines:
+                title: "Custom Engines / Renderers"
+                description: "Anything I've made where I've had to make my own renderer"
+                projects:
+                    - "PS5"
+                    - "MiniGolf"
+            Steam:
+                title: "Steam Releases"
+                description: "Games I've published on Steam"
+                projects:
+                    - "PrisonMiner"
+                    - "WoTW"
+            Misc:
+                title: "Miscellaneous"
+                description: "Everything else that's pretty cool but doesn't really have a place"
+                projects:
+                    - "Minesweeper"
+    skills:
+        - "C++"
+        - "C#"
+        - "Python"
+        - "Ruby"
+        - "HTML / CSS"
+        - "Unity"
+        - "Unreal Engine 5"
+        - "DirectX"
+        - "PS5"
+        - "SFML"
+        - "Visual Studio"
+        - "Git"
+        - "MySQL"
+    experience:
+        - "autodesk"
+        - "hallam"
+        - "chesterfieldCollege"
+    contact:
+        git:
+            title: "GitHub"
+            link: https://github.com/MarcHansen2002
+            linkDisplay: "github.com/MarcHansen2002"
+        linkedin:
+            title: "LinkedIn"
+            link: "https://www.linkedin.com/in/marchansen2002/"
+            linkDisplay: "LinkedIn.com/in/MarcHansen2002"
+        cv:
+            title: "CV"
+            link: "MarcHansen_CV.pdf"
+            linkDisplay: "View"
+        email:
+            title: "Email"
+            linkDisplay: "MarcHansen2002@gmail.com"

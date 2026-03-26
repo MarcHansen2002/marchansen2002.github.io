@@ -1,0 +1,35 @@
+experience:
+    autodesk:
+        name: "Autodesk - Internship"
+        date:
+            start: "July 2024"
+            end: "July 2025"
+        description: Software Engineer for the Navisworks team
+        responsibilities:
+            - "Add in new features into an already developed codebase"
+            - "Fix bugs reported by customers, communicating via Jira tickets"
+            - "Refactor old code within the codebase"
+            - "Work alongside the UX team to ensure everything is to their design"
+    hallam:
+        name: "Sheffield Hallam University"
+        date:
+            start: "September 2022"
+            end: "May 2027 (Expected)"
+        description: "MComp Computer Science for Games"
+        responsibilities:
+            - "Developing an engine for use in a group project for the PS5"
+            - "Mathematics for rendering"
+            - "Software-Hardware optimisation techniques"
+            - "Object Oriented Programming & DirectX11 game development"
+            - "Game-loop structure using SFML & C++"
+    chesterfieldCollege:
+        name: "Chesterfield College"
+        date:
+            start: "September 2019"
+            end: "July 2021"
+        description: "Game Design & Development"
+        responsibilities:
+            - "Unreal Engine 4"
+            - "Autodesk Maya"
+            - "Project Management"
+            - "Trends in games and where they could be going"

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>@@project_title@@ | Marc Hansen</title>
-		@@styles@@
+@@styles@@
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -19,19 +19,19 @@
 				<div>
 					<h1 class="project-title">@@project_title@@</h1>
 					<p class="project-subtitle">
-					@@project_subtitle@@
+@@project_subtitle@@
 					</p>
 				</div>
-				@@project_links@@
+@@project_links@@
 			</div>
 
-			@@project_overview@@
-			@@project_featurelist@@
-			@@project_techlist@@
-			@@project_screenshots@@
-			@@project_architecture@@
-			@@project_challenges@@
-			@@project_learned@@
+@@project_overview@@
+@@project_featurelist@@
+@@project_techlist@@
+@@project_screenshots@@
+@@project_architecture@@
+@@project_challenges@@
+@@project_learned@@
 
 		</div>
 	</body>

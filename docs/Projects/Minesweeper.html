@@ -4,9 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>SFML Minesweeper | Marc Hansen</title>
-		<link rel="stylesheet" href="../CSS/style.css">
-<link rel="stylesheet" href="../CSS/project.css">
-<script defer src="../Scripts/particles.js"></script>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/project.css"> 
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script defer src="../Scripts/particles.js"></script>
+        <link rel="stylesheet" href="../CSS/project.css">
 
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 	</head>
@@ -22,71 +24,75 @@
 				<div>
 					<h1 class="project-title">SFML Minesweeper</h1>
 					<p class="project-subtitle">
-					A remake of the classic game Minesweeper in SFML
+                        A remake of the classic game Minesweeper in SFML
+
 					</p>
 				</div>
-				<div class="project-links">
-<a href='https://github.com/MarcHansen2002/sfml-minesweeper' target="_blank">Github Repo</a>
-</div>
+                <div class="project-links">
+                    <a href='https://github.com/MarcHansen2002/sfml-minesweeper' target="_blank">
+                    Github Repo
+                    </a>
+                </div>
 
 			</div>
 
-			<section class = "section">
-<h2>Overview</h2>
-<p>
-In first year of University we learnt how to make basic 2D games using SFML and C++, I got really interested in making my own games from scratch from this module rather than using a game engine, and wanted to practice that skill and get a deeper understanding on the flow of game loops. During the break between first and second year I started working on this project to practice that skill, recreating one of my favourite games at the time Minesweeper (Which I still love to this day, and can flex that I used to have a top 100 score on the extreme mode on speedrun.com). 
+            <section class = "section">
+                <h2>Overview</h2>
+                <p>
+                In first year of University we learnt how to make basic 2D games using SFML and C++, I got really interested in making my own games from scratch from this module rather than using a game engine, and wanted to practice that skill and get a deeper understanding on the flow of game loops. During the break between first and second year I started working on this project to practice that skill, recreating one of my favourite games at the time Minesweeper (Which I still love to this day, and can flex that I used to have a top 100 score on the extreme mode on speedrun.com). 
 
-</p>
-</section>
+                </p>
+            </section>
 
-			<section class = "section">
-<h2>Key Features</h2>
-<ul class="feature-list">
-<li>Different Difficulties matching the original Minesweeper</li>
-<li>Protection against the first click becoming a mine</li>
-<li>MySQL to save best scores</li>
-<li>All the mechanics of the classic minesweeper</li>
-</ul>
-</section>
+            <section class = "section">
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    <li>Different Difficulties matching the original Minesweeper</li>
+                    <li>Protection against the first click becoming a mine</li>
+                    <li>MySQL to save best scores</li>
+                    <li>All the mechanics of the classic minesweeper</li>
+                </ul>
+            </section>
 
-			<section class = "section">
-<h2>Technologies Used</h2>
-<div class="tech-list">
-<span>C++</span>
-<span>SFML</span>
-<span>MySQL</span>
-</div>
-</section>
+            <section class = "section">
+                <h2>Technologies Used</h2>
+                <div class = "tech-list">
+                    <span>C++</span>
+                    <span>SFML</span>
+                    <span>MySQL</span>
+                </div>
+            </section>
 
-			<section class = "section">
-<h2>Screenshots</h2>
-<div class="image-grid">
-<img src='../Images/Minesweeper/ms_1.PNG'>
-<img src='../Images/Minesweeper/ms_2.PNG'>
-<img src='../Images/Minesweeper/ms_3.PNG'>
-<img src='../Images/Minesweeper/ms_4.PNG'>
-<img src='../Images/Minesweeper/ms_5.PNG'>
-<img src='../Images/Minesweeper/ms_6.PNG'>
-<img src='../Images/Minesweeper/ms_7.PNG'>
-</div>
-</section>
+            <section class = "section">
+                <h2>Screenshots</h2>
+                <div class = "image-grid">
+                    <img src='../Images/Minesweeper/ms_1.PNG'>
+                    <img src='../Images/Minesweeper/ms_2.PNG'>
+                    <img src='../Images/Minesweeper/ms_3.PNG'>
+                    <img src='../Images/Minesweeper/ms_4.PNG'>
+                    <img src='../Images/Minesweeper/ms_5.PNG'>
+                    <img src='../Images/Minesweeper/ms_6.PNG'>
+                    <img src='../Images/Minesweeper/ms_7.PNG'>
+                </div>
+            </section>
 
-			
-			<section class = "section">
-<h2>Challenges & Solutions</h2>
-<p>
-The challenges in this project were not as difficult as others, as this was the second project using the technologies used so I could practice with them more after the assignment for University, in which I made flappy bird. The main challenge with this project was the mechanics of Minesweeper as they seem simple at first, but are a lot more complex when actually trying to re-create them.
 
-</p>
-</section>
 
-			<section class = "section">
-<h2>What I Learned</h2>
-<p>
-I learned a lot about how the flow of a game loop actually runs such as the order for updating, rendering and checking collisions / inputs. I also got a better understanding into C++, the mechanics in minesweeper use a lot of tile checking (Especially when opening a tile with no number as it needs to open every other non-number tile and every first number tile they're connected to) which can lead to using a lot of processing power. It's not on the level of what I could make as of writing this about the project (19/03/2026) but for my current skill at the time I believe it to be well made.
+            <section class = "section">
+                <h2>Challenges & Solutions</h2>
+                <p>
+                The challenges in this project were not as difficult as others, as this was the second project using the technologies used so I could practice with them more after the assignment for University, in which I made flappy bird. The main challenge with this project was the mechanics of Minesweeper as they seem simple at first, but are a lot more complex when actually trying to re-create them.
 
-</p>
-</section>
+                </p>
+            </section>
+
+            <section class = "section">
+                <h2>What I learned</h2>
+                <p>
+                I learned a lot about how the flow of a game loop actually runs such as the order for updating, rendering and checking collisions / inputs. I also got a better understanding into C++, the mechanics in minesweeper use a lot of tile checking (Especially when opening a tile with no number as it needs to open every other non-number tile and every first number tile they're connected to) which can lead to using a lot of processing power. It's not on the level of what I could make as of writing this about the project (19/03/2026) but for my current skill at the time I believe it to be well made.
+
+                </p>
+            </section>
 
 
 		</div>

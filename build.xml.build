@@ -19,14 +19,16 @@
 	<copy todir="${build.dir}/CSS">
 		<fileset basedir="src/CSS" />
 	</copy>
-	<copy file = "src/Data/index.html" tofile="${build.dir}/index.html"/>
 	<copy file = "src/Data/MarcHansen_CV.pdf" tofile="${build.dir}/MarcHansen_CV.pdf"/>
 	<copy todir="${build.dir}/Images">
 		<fileset basedir="src/Images" />
 	</copy>
 
+	<exec program="python">
+      <arg value="scripts/IndexBuilder.py"/>
+    </exec>
     <exec program="python">
-      <arg value="ProjectBuilder.py"/>
+      <arg value="scripts/ProjectBuilder.py"/>
     </exec>
   </target>
 

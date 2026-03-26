@@ -1,7 +1,7 @@
 import os
 
 def ScriptDir():
-    return os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "../")
     
 def SrcDir():
     return os.path.join(ScriptDir(), "src")

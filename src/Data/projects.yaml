@@ -1,0 +1,42 @@
+projects:
+    PrisonMiner:
+        title: "Prison Miner"
+        description: >
+            A 2D game creating in the
+            Unity engine and published to
+            steam. Re-imagine of the
+            classic "Prisons" gamemode,
+            commonly found on Minecraft
+            servers
+        link: "Projects/PrisonMiner.html"
+    PS5:
+        title: "PS5 Group Project Game"
+        description: >
+            An engine developed from
+            scratch for creating games
+            for the PlayStation 5. Then
+            used in a group project to
+            create a gravity-based 
+            platformer / puzzle game.
+        link: "Projects/PS5.html"
+    WoTW:
+        title: "Wizards of The West"
+        description: >
+            My first steam release, a 3D
+            boss fight / story game made
+            in Unreal Engine 4
+        link: "Projects/WoTW.html"
+    Minesweeper:
+        title: "SFML Minesweeper"
+        description: >
+            A remake of the classic 
+            minesweeper made in C++
+            using SFML
+        link: "Projects/Minesweeper.html"
+    MiniGolf:
+        title: "DirectX11 Mini-Golf"
+        description: >
+            Mini-golf game with basic
+            level editor in C++ with
+            DX11/DXTK
+        link: "Projects/DirectXMiniGolf.html"

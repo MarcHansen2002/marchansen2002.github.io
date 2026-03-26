@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Marc Hansen | Developer Portfolio</title>
+		<link rel="stylesheet" href="CSS/style.css">
+			<script defer src="Scripts/particles.js"></script>
+			<script defer src="Scripts/ui.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<canvas id="particles"></canvas>
+		<div class="window">
+			<header class="titlebar">
+			Marc Hansen — Software Engineer
+			</header>
+			<div class="layout">
+				<nav class="sidebar">
+					<button data-panel="about">About</button>
+					<button data-panel="projects">Projects</button>
+					<button data-panel="skills">Skills</button>
+					<button data-panel="education">Education & Experience</button>
+					<button data-panel="contact">Contact</button>
+				</nav>
+				<main class="content">
+					<section id="about" class="panel active">
+@@INDEX_ABOUT@@
+					</section>
+					
+					<!-- PROJECTS -->
+					<section id="projects" class="panel">
+@@INDEX_PROJECTS@@
+					</section>
+					
+					<!-- SKILLS -->
+					<section id="skills" class="panel">
+@@INDEX_SKILLS@@
+					</section>
+					
+					<!-- EDUCATION & EXPERIENCE -->
+					<section id="education" class="panel">
+@@INDEX_EXPERIENCE@@
+					</section>
+					
+					<!-- CONTACT -->
+					<section id="contact" class="panel">
+@@INDEX_CONTACT@@
+					</section>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>

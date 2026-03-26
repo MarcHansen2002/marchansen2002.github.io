@@ -5,170 +5,171 @@ from pygments.lexers import CSharpLexer
 from pygments.formatters import HtmlFormatter
 
 import Paths
-
-
-def Tabs(amount):
-    return "    " * amount
-
-# Conversions
-def GetYaml(cls, key):
-    if key in cls:
-        return cls[key]
-    return "YAML NOT FOUND"
-    
-def HasYaml(cls, key):
-    if key in cls:
-        return true;
-    return false;
-    
-def CleanUpHtml(html):
-    variables = ["@@styles@@", "@@project_title@@", "@@project_subtitle@@", "@@project_overview@@",
-    "@@project_featurelist@@", "@@project_techlist@@", "@@project_screenshots@@", "@@project_architecture@@", "@@project_challenges@@",
-    "@@project_learned@@", "@@project_links@@"]
-    
-    for var in variables:
-        html = html.replace(var, "")
-    return html
+import Utils
 
 def InjectStyles(html):
-    htmlStr = ""
-    htmlStr += """<link rel="stylesheet" href="../CSS/style.css">"""
-    htmlStr += "\n"
-    htmlStr += """<link rel="stylesheet" href="../CSS/project.css">"""
-    htmlStr += "\n"
-    htmlStr += """<script defer src="../Scripts/particles.js"></script>"""
-    htmlStr += "\n"
-    
+    htmlStr = """\
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/project.css"> 
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script defer src="../Scripts/particles.js"></script>
+        <link rel="stylesheet" href="../CSS/project.css">
+"""
     return html.replace("@@styles@@", htmlStr)
 
 def ProjectTitle(html, cls, search):
     if search in cls:
-        htmlStr = GetYaml(cls, search)
+        htmlStr = Utils.GetYaml(cls, search)
         return html.replace("@@project_title@@", htmlStr)
     return html
+
 def ProjectSubtitle(html, cls, search):
     if search in cls:
-        htmlStr = GetYaml(cls, search)
+        htmlStr = f"""\
+                        {Utils.GetYaml(cls, search)}
+"""
         return html.replace("@@project_subtitle@@", htmlStr)
     return html
 def ProjectOverview(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<section class = "section">""" + "\n"
-        htmlStr += "<h2>Overview</h2>\n"
-        htmlStr += "<p>\n"
-        htmlStr += GetYaml(cls, search)
-        htmlStr += "\n</p>\n</section>\n"
-        
+        htmlStr = f"""\
+            <section class = "section">
+                <h2>Overview</h2>
+                <p>
+                {Utils.GetYaml(cls, search)}
+                </p>
+            </section>
+"""
         return html.replace("@@project_overview@@", htmlStr)
     return html
+
 def ProjectFeatureList(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<section class = "section">""" + "\n"
-        htmlStr += "<h2>Key Features</h2>\n"
-        htmlStr += """<ul class="feature-list">""" + "\n"
-        
+        htmlStr = """\
+            <section class = "section">
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+"""
         # Generate List
         features = cls.get(search, [])
         for info in features:
-            htmlStr += "<li>" + info + "</li>\n"
+            htmlStr += f"""\
+                    <li>{info}</li>
+"""
         
-        htmlStr += "</ul>\n</section>\n"
+        htmlStr += """\
+                </ul>
+            </section>
+"""
         return html.replace("@@project_featurelist@@", htmlStr)
     return html
+    
 def ProjectTechList(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<section class = "section">""" + "\n"
-        htmlStr += "<h2>Technologies Used</h2>\n"
-        htmlStr += """<div class="tech-list">""" + "\n"
+        htmlStr = """\
+            <section class = "section">
+                <h2>Technologies Used</h2>
+                <div class = "tech-list">
+"""
         
         # Generate List
         features = cls.get(search, [])
         for info in features:
-            htmlStr += "<span>" + info + "</span>\n"
+            htmlStr += f"""\
+                    <span>{info}</span>
+"""
         
-        htmlStr += "</div>\n</section>\n"
+        htmlStr += """\
+                </div>
+            </section>
+"""
         return html.replace("@@project_techlist@@", htmlStr)
     return html
+    
 def ProjectScreenshots(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<section class = "section">""" + "\n"
-        htmlStr += "<h2>Screenshots</h2>\n"
-        htmlStr += """<div class="image-grid">""" + "\n"
+        htmlStr = """\
+            <section class = "section">
+                <h2>Screenshots</h2>
+                <div class = "image-grid">
+"""
         
         # Generate List
         features = cls.get(search, [])
         for info in features:
-            htmlStr += """<img src='../Images/""" + info + """'>\n"""
+            htmlStr += f"""\
+                    <img src='../Images/{info}'>
+"""
         
-        htmlStr += "</div>\n</section>\n"
+        htmlStr += """\
+                </div>
+            </section>
+"""
         return html.replace("@@project_screenshots@@", htmlStr)
     return html
+    
 def ProjectArchitecture(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<section class = "section">""" + "\n"
-        htmlStr += "<h2>Architecture</h2>\n"
-        htmlStr += "<p>\n"
-        htmlStr += GetYaml(cls, search)
-        htmlStr += "\n</p>\n</section>\n"
+        htmlStr = f"""\
+            <section class = "section">
+                <h2>Architecture</h2>
+                <p>
+                {Utils.GetYaml(cls, search)}
+                </p>
+            </section>
+"""
         return html.replace("@@project_architecture@@", htmlStr)
     return html
+    
 def ProjectChallenges(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<section class = "section">""" + "\n"
-        htmlStr += "<h2>Challenges & Solutions</h2>\n"
-        htmlStr += "<p>\n"
-        htmlStr += GetYaml(cls, search)
-        htmlStr += "\n</p>\n</section>\n"
+        htmlStr = f"""
+            <section class = "section">
+                <h2>Challenges & Solutions</h2>
+                <p>
+                {Utils.GetYaml(cls, search)}
+                </p>
+            </section>
+"""
         return html.replace("@@project_challenges@@", htmlStr)
     return html
+    
 def ProjectLearned(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<section class = "section">""" + "\n"
-        htmlStr += "<h2>What I Learned</h2>\n"
-        htmlStr += "<p>\n"
-        htmlStr += GetYaml(cls, search)
-        htmlStr += "\n</p>\n</section>\n"
+        htmlStr = f"""\
+            <section class = "section">
+                <h2>What I learned</h2>
+                <p>
+                {Utils.GetYaml(cls, search)}
+                </p>
+            </section>
+"""
         return html.replace("@@project_learned@@", htmlStr)
     return html
     
 def ProjectLinks(html, cls, search):
     if search in cls:
-        htmlStr = ""
-        htmlStr += """<div class="project-links">""" + "\n"
+        htmlStr = """\
+                <div class="project-links">
+"""
         
         links = cls.get("links", {})
         for link, linkInfo in links.items():
             name = linkInfo.get("name", "")
             url = linkInfo.get("link", "")
         
-            htmlStr += """<a href='""" + url + """' target="_blank">"""
-            htmlStr += name
-            htmlStr += "</a>"
-        
-        htmlStr +="\n</div>\n"
+            htmlStr += f"""\
+                    <a href='{url}' target="_blank">
+                    {name}
+                    </a>
+                </div>
+"""
         return html.replace("@@project_links@@", htmlStr)
     return html
     
 def BuildProject(yamlFile):
     filename = os.path.basename(yamlFile)
-    # READ YAML
-    with open(yamlFile) as f:
-        try:
-            data = yaml.safe_load(f)
-        except yaml.YAMLError as e:
-            print(f"[ERROR] Failed to parse YAML in {filename}: {e}")
-            return
-        if data is None:
-            print(f"[WARNING] Skipping {filename} - File is empty or contains only comments")
-            return
-    # READ TEMPLATE
+    data = Utils.ReadYaml(yamlFile)
     with open(Paths.GetTemplate("ProjectTemplate.html.src"), encoding="utf-8") as f:
         template = f.read()
         
@@ -178,9 +179,6 @@ def BuildProject(yamlFile):
 
     output_path = os.path.join(Paths.OutputDir(), rel_path)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    
-    print(rel_path)
-    print(output_path)
     
     html = template
     cls = data["project"]
@@ -198,7 +196,7 @@ def BuildProject(yamlFile):
     html = ProjectLearned(html, cls, "learned")
     html = ProjectLinks(html, cls, "links")
     
-    html = CleanUpHtml(html)
+    html = Utils.CleanUpHtml(html)
     
     with open(output_path, "w", encoding="utf-8") as out:
         out.write(html)
