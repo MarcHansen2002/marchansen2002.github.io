@@ -1,3 +1,5 @@
+
+document.addEventListener("DOMContentLoaded", () => {
 // UI switching
 const buttons = document.querySelectorAll(".sidebar button");
 const panels = document.querySelectorAll(".panel");
@@ -58,3 +60,4 @@ backButton.onclick = showBase;
 
 // Initial state
 showBase();
+});
