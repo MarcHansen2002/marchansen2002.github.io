@@ -7,7 +7,7 @@ projects:
             steam. Re-imagine of the
             classic "Prisons" gamemode,
             commonly found on Minecraft
-            servers
+            servers.
         link: "Projects/PrisonMiner.html"
     PS5:
         title: "PS5 Group Project Game"
@@ -24,19 +24,31 @@ projects:
         description: >
             My first steam release, a 3D
             boss fight / story game made
-            in Unreal Engine 4
+            in Unreal Engine 4.
         link: "Projects/WoTW.html"
     Minesweeper:
         title: "SFML Minesweeper"
         description: >
             A remake of the classic 
             minesweeper made in C++
-            using SFML
+            using SFML.
         link: "Projects/Minesweeper.html"
     MiniGolf:
         title: "DirectX11 Mini-Golf"
         description: >
             Mini-golf game with basic
             level editor in C++ with
-            DX11/DXTK
+            DX11/DXTK.
         link: "Projects/DirectXMiniGolf.html"
+    CombatColosseum:
+        title: "Combat Colloseum"
+        description: >
+            Group project game created
+            in Unity for University.
+        link: "Projects/CombatColosseum.html"
+    BulletBlastOff:
+        title: "Bullet Blast-Off"
+        description: >
+            Unreal Engine 4 physics based
+            game with some basic networking.
+        link: "Projects/BulletBlastOff.html"

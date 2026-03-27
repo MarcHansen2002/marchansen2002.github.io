@@ -28,6 +28,12 @@ index:
                 projects:
                     - "PrisonMiner"
                     - "WoTW"
+            OtherGames:
+                title: "Other Games"
+                description: "Games I've made that did not make it to being published on steam"
+                projects:
+                    - "CombatColosseum"
+                    - "BulletBlastOff"
             Misc:
                 title: "Miscellaneous"
                 description: "Everything else that's pretty cool but doesn't really have a place"

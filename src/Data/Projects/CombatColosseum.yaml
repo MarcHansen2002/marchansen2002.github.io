@@ -1,0 +1,42 @@
+project:
+    title: "Combat Colloseum"
+    subtitle: "A group project game created in Unity for a University assignment"
+    overview: >
+        In my first year of Computer Science for Games at Sheffield Hallam we had a project to create a game in Unity
+        alongside designers and artists. We created a top down 2D wave-based combat game, where you would be a gladiator
+        in a colloseum fighting waves of enemies. We had plans for boss fights but due to time constraints had to scale
+        back and went with an extra enemy type instead to increase variety in waves. In our group we had myself, one other
+        programmer, 2 artists (later reduced to 1 due to one of them changing courses, but still gave very good assets
+        for the project), and 2 designers. I was primarily responsible for the combat / levelling system and the enemy
+        AI, whilst the other programmer did the menus, UI and the wave system.
+    features:
+        - "A variety of abilities and upgrades"
+        - "Endless wave progression"
+        - "3 Enemy types with unique AI"
+    tech:
+        - "C#"
+        - "Unity"
+    screenshots:
+        - "CombatColloseum/cc_1.png"
+        - "CombatColloseum/cc_2.png"
+        - "CombatColloseum/cc_3.png"
+        - "CombatColloseum/cc_4.png"
+        - "CombatColloseum/cc_5.png"
+    challenges: >
+        This was my first time using Unity fully. I had previously installed it once or twice but was primarly an Unreal
+        Engine 4 developer at the time, so learning a new engine and going from 3D to 2D development was a challenge,
+        especially with how much time we had to complete the project. It was my first time working in a larger team as well
+        with this time constraint so at times I wouldn't know what we would have time to or not have time to add into the final
+        product. For example, we wanted to add a second weapon type and bosses, which I thought we should be able to add in time
+        but due to unforseen issues with merging at the time we were unable to find the time for. However for the levelling system
+        we were advised against adding it due to the time constraints, but it had already been made and implemented before being
+        told that and only took around a day of work.
+    learned: >
+        Throughout the project I learned about the amount of time it takes to create certain features, so that I could better
+        manage my time in future projects. I also became a lot more familiar with the Unity engine and found that I really enjoy
+        creating 2D games more than I did 3D, whilst previously believing I enjoyed 3D more just because that's what I was
+        taught to use in College with Unreal Engine 4.
+    links:
+        itch:
+            name: "Itch"
+            link: "https://marchansen.itch.io/combat-colosseum"

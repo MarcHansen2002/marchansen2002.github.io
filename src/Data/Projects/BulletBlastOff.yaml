@@ -1,0 +1,37 @@
+project:
+    title: "Bullet Blast-Off"
+    subtitle: "3D movement shooter game in Unreal Engine 4, testing with networking"
+    overview: >
+        Bullet Blast-Off was a game I started creating in Unreal Engine 4 over the summer of 2021. I wanted
+        to use this project to get more familiar with networking and replication. I really enjoyed working
+        on this project and wanted to make a full game, but due to returning to University and the amount
+        of 3D models required for making the game I stopped working on it.
+    features:
+        - "Sliding physics for downhill"
+        - "Using a shotgun to apply a physics force"
+        - "Multiplayer lobbies and connection"
+    tech:
+        - "Unreal Engine 4"
+        - "Unreal Blueprints"
+        - "Steam networking"
+    screenshots:
+        - "BBO/bbo_1.png"
+        - "BBO/bbo_2.png"
+        - "BBO/bbo_3.png"
+        - "BBO/bbo_4.png"
+    challenges: >
+        This was the first project where I attempted to use networking to allow for multiple players to play
+        together online. I used a plugin for unreal that allowed me to access the steam API through blueprints
+        so that I could try to better understand the relationship between clients and server within games.
+        Due to being primarily a programmer, working on this project solo brought along some other challenges too
+        such as my level design skills being poor and my skills as a 3D modeller, which discourages me from continuing
+        the project.
+    learned: >
+        I learnt a lot about the relationship between client and server working on this, creating a UI for making
+        / joining lobbies created by other players through the steam API. I also learned about the amount of effort
+        that the other professions within the games industry puts in by being unable to do those roles myself whilst
+        working on the project.
+    links:
+        steam:
+            name: ""
+            link: ""
